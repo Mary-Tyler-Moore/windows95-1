@@ -9,6 +9,10 @@
                 :title="'Printer'"
                 :file="'printer.png'"
             />
+            <Program
+                :title="'Inspector'"
+                :file="'briefcase-0.png'"
+            />
             <ProgramWindows/>
         </div>
         <NavigatorBar/>
@@ -18,6 +22,7 @@
 <script>
 import NavigatorBar from '../components/Home/Navigator/NavigatorBar'
 import Program from '../components/Home/Desktop/Program/Program'
+import Inspector from '../components/Home/Desktop/Program/Inspector'
 import {mapMutations} from 'vuex'
 import {debounce} from 'debounce'
 import ProgramWindows from '../components/Home/Desktop/ProgramWindows/ProgramWindows'
@@ -27,6 +32,7 @@ export default {
     components: {
         NavigatorBar,
         Program,
+        Inspector,
         ProgramWindows
     },
     data(){
